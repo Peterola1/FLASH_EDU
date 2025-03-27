@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+ 
+
+.logo{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    border-radius: 40px;
+}
+ 
+.topnav a{
+    float: right;
+    padding: 20px;
+    position: relative;
+    bottom: 72px;
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+    z-index: 3;
+}
+
+.topnav a:hover{
+  color: wheat;
+
+}
+nav{
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    padding: 13px;
+    height: 70px;
+    z-index: 1;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 0;
+    background-color:rgb(104, 101, 101);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: .5s; /* 0.5 second transition effect to slide in the sidenav */
+    /* transform: translateY(100px); */
+     
+  }
+
+.sidenav a{
+    padding: 4px 4px 4px 32px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+
+  }
+ 
+/* .sidenav .container{
+    position: relative;
+    left: 30px;
+} */
+.sidenav a:hover{
+    transform: translate(20px);
+    background-color: gray;
+    color: white;
+  }
+  .sidenav a:focus{
+    background-color: gray;
+    color: white;
+  }
+  .closebtn{
+    position: fixed;
+    top: 0px;
+  }
+  /* When you mouse over the navigation links, change their color */
+  a.links:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav .closebtn:hover{
+    color: white;
+  }
+
+.sidenav li{
+    list-style: none;
+}
+
+.open{
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(194, 185, 185);
+    text-decoration: none;
+    float: right;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+    display: none;
+}
+.open:hover{
+    cursor: pointer;
+}
+
+/* Styling the area of the slides */
+#slideshow {
+    overflow: hidden;
+    height: 460px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+  }
+   
+  /* Style each of the sides
+  with a fixed width and height */
+  .slide {
+    float: left;
+    height: 510px;
+    width: 1370px;
+  }
+   
+  /* Add animation to the slides */
+  .slide-wrapper {
+     
+  /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(1370px * 4);
+   
+  /* Specify the animation with the
+    duration and speed */
+    animation: slide 20s ease infinite;
+  }
+  .slide-number img{
+    /* filter: brightness(30%); */
+  }
+   
+  /* Set the background color
+  of each of the slides */
+  /* .slide:nth-child(1) {
+    background: green;
+  }
+   
+  .slide:nth-child(2) {
+    background: pink;
+  }
+   
+  .slide:nth-child(3) {
+    background: red;
+  }
+   
+  .slide:nth-child(4) {
+    background: yellow;
+  } */
+   
+  /* Define the animation
+  for the slideshow */
+  @keyframes slide {
+     
+  /* Calculate the margin-left for
+    each of the slides */
+    20% {
+      margin-left: 0px;
+    }
+   
+    40% {
+      margin-left: calc(-1370px * 1);
+    }
+   
+    60% {
+      margin-left: calc(-1370px * 2);
+    }
+   
+    80% {
+      margin-left: calc(-1370px * 3);
+    }
+  }
+
+  .welcome{
+    position: absolute;
+    top: 275px;
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    width: 500px;
+    z-index: -1;
+  }
+   
+  body{margin-top:20px;
+    background:#eee;
+    }
+ 
+#myBtn {
+   
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  top: 600px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border-radius: 50px;
+  border: none;
+  outline: none; /* Remove outline */
+  background-color: transparent; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+
+footer{
+  /* background-color: #222; */
+  color: white;
+  /* display: flex; */
+  background-image: url(b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.footer{
+   margin-top: 100px;
+  display: grid;
+  padding-top: 30px;
+  grid-template-columns: auto auto auto auto;
+  width: 100%;
+  margin-bottom: 50px;
+  /* margin: auto; */
+   
+} 
+.footer-head, .footer-contact, .footer-quick-link, .footer-follow{
+  width: 200px;
+  padding-left: 30px;
+}
+
+.footer-head, .footer-contact, .footer-quick-link, .footer-follow{
+  /* margin: auto; */
+  line-height: 30px;
+}
+.footer-contact, .footer-quick-link, .footer-follow{
+  margin-top: 50px;
+}
+
+.footer-head li, .footer-contact li, .footer-quick-link li, .footer-follow li{
+  list-style: none;
+}
+
+.footer-head li a, .footer-contact li a, .footer-quick-link li a, .footer-follow li a{
+  padding: 20px;
+}
+.icons i{
+  padding-top: 5px;
+}
+
+.footer-contact{
+  /* margin-top: 80px; */
+}
+.footer-contact a, .footer-follow a, .footer-quick-link a{
+  text-decoration: none;
+  color: white;
+}
+.icons{
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .topnav {
+        display: none;
+        transition: 0.5s;
+    }
+    .topnav{
+        background-color: #f1f1f1;
+        transition: 0.5s;
+    }
+  nav{
+    position: fixed;
+
+  }
+
+  .sidenav a{
+    margin-left: 10px;
+  }
+  .sign {
+    width: 70%;
+  }
+
+    .open{
+        display: block;
+        position: fixed;
+        padding: 20px;
+        /* top: -45px; */
+        transition: 0.5s;
+        font-size: 30px;
+        z-index: 2;
+    }
+     
+    .welcome{
+        position: absolute;
+        top: 290px;
+        font-size: 5px;
+        background-color: rgb(0,0,0,0.7);
+        padding: 0px;
+        color: white;
+        font-size: 15px;
+        width: 100%;
+      }
+      .welcome h1{
+        font-size: 25px;
+        padding: 20px;
+      }
+}
+ 
+@media screen and (max-width: 1000px) {
+    .sub-head-page{
+        display: block;
+    }
+    .future{
+        width: 80%;
+        margin-bottom: 30px;
+        height: 260px;
+    } 
+    .students{
+      font-size: 24px;
+    }
+    /* .one h3, .one ul li, .two h3, .two ul li{
+      font-size: 20px;
+    } */
+  }
+    @media screen and (max-width: 850px) {
+      .footer{
+        /* display: grid;
+        grid-template-columns: auto auto auto auto;
+         */
+         margin-top: 100px;
+        display: grid;
+        grid-template-columns: auto ;
+        width: 100%;
+        /* margin-bottom: 50px;   */
+      }
+      .footer-quick-link, .footer-follow{
+        margin-top: 0px;
+      }
+      .footer-head, .footer-contact, .footer-follow, .footer-quick-link{
+        /* margin: auto; */
+        align-items: center;
+      }
+      .footer-head{
+        width: 80%;
+      }
+    }
+    .footer-head, .footer-contact, .footer-quick-link, .footer-follow{
+      margin-top: 0px;
+      padding-top: 20px;
+    }
+    
+
+  
+    /* @media all and(orientation: landscape) {
+      body{
+        background-color: red;
+      }
+    }
+    @media all and(orientation: portrait) {
+      body{
+        background-color: blue;
+      }
+    } */
+  
